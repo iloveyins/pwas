@@ -1,0 +1,45 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
+import { registerLocaleData } from '@angular/common';
+import zh from '@angular/common/locales/zh';
+import { HomeTestComponent } from './home-test/home-test.component';
+import { RouterModule, Routes } from '@angular/router';
+import { DetailsTestComponent } from './details-test/details-test.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
+registerLocaleData(zh);
+
+const appRoutes :Routes=[
+  {path:'',component:HomeTestComponent},
+  {path:'details-test',component:DetailsTestComponent}
+];
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HomeTestComponent,
+    DetailsTestComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    NgZorroAntdModule,
+    RouterModule.forRoot(
+      appRoutes,
+      {enableTracing:true}
+    ),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+  ],
+  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

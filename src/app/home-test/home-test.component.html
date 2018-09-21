@@ -1,0 +1,134 @@
+<div class="home">
+  <div nz-row>
+    <div nz-col [nzXs]="24" class="serach-content">
+      <nz-input-group [nzSuffix]="suffixTemplate" nzPrefixIcon="anticon anticon-search">
+        <input type="text" nz-input placeholder="Enter your username"  class="serach-input">
+      </nz-input-group>
+      <ng-template #suffixTemplate><i class="anticon anticon-search" (click)="username=null" *ngIf="username"></i></ng-template>
+    </div>
+  </div>
+  <div nz-row>
+    <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let index of array">
+        <img alt="example" src="{{index}}" />
+      </div>
+    </nz-carousel>
+  </div>
+  <div nz-row class="home-title">
+    Upcconing nagice
+  </div>
+  <div nz-row [nzGutter]="6" style="margin-bottom: 30px;">
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="{{src}}" />
+        <div>
+          Europe Street beat
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content">
+        <img alt="example" src="{{src}}" />
+        <div>
+          Shameless
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          NCIS
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          TheNum
+        </div>
+      </div>
+    </div>
+  </div>
+  <div nz-row class="home-title">
+    The Big Bang Theory
+  </div>
+  <div nz-row [nzGutter]="6" style="margin-bottom: 30px;">
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Europe Sbottom
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Beat
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Europe beat
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Europe Street
+        </div>
+      </div>
+    </div>
+  </div>
+  <div nz-row class="home-title">
+    Popular movies
+  </div>
+  <div nz-row [nzGutter]="6" style="margin-bottom: 30px;">
+    <div nz-col [nzXs]="6" routerLink="./details-test">
+      <div class="img-list-content">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Street beat
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Europe
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Street beat
+        </div>
+      </div>
+    </div>
+    <div nz-col [nzXs]="6">
+      <div class="img-list-content" routerLink="./details-test">
+        <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
+        <div>
+          Ea beat
+        </div>
+      </div>
+    </div>
+  </div>
+  <div nz-row class="bottom">
+    <i class="anticon anticon-twitter"></i>
+    <p>
+      This stors uess the TMD API bul i not enable
+    </p>
+  </div>
+</div>

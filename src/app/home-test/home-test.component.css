@@ -1,0 +1,59 @@
+.home{
+    background-color: #3e4f5b;
+    height: 1000px;
+    width: 100%;
+    padding:5px;
+}
+.serach-input{
+    background-color: #63808c;
+    border: 0;
+    color: black;
+    border-radius: 0;
+}
+
+[nz-carousel-content] {
+    text-align: center;
+    height: 220px;
+    line-height: 220px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+  }
+  .home-title{
+      color: #fff;
+      padding: 5px 5px;
+  }
+ .serach-content{
+    padding-bottom:5px;
+    /* position:fixed; */
+    /* z-index: 99; */
+ }
+  .img-list-content{
+    background-color: #50616b;
+    height: 150px;
+    color: #fff;
+  } 
+  .img-list-content div{
+      padding: 5px;
+      font-size: 10px;
+  }
+  .img-list-content img{
+    width: 100%;
+    height: 100px;
+  }
+  .bottom{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 50px;
+      color: #fff;
+  }
+  .bottom-i{
+      width: 100%;
+      height: 30px;
+  }
+
+  .bottom p{
+      margin-top: 20px;
+  }
