@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-test.component.css']
 })
 export class HomeTestComponent implements OnInit {
- 
- 
+
   src: string="";
 
   array = ["https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
     "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
     "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
     "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"];
+    
   marksGutter = {
     8: 8,
     16: 16,
@@ -22,6 +22,7 @@ export class HomeTestComponent implements OnInit {
     40: 40,
     48: 48
   };
+
   marksCount = {
     2: 2,
     3: 3,

@@ -14,6 +14,7 @@ import { HomeTestComponent } from './home-test/home-test.component';
 import { Routes, RouterModule } from '@angular/router';
 import { DetailsTestComponent } from './details-test/details-test.component';
 import { HttpInterceptorService } from './utils/HttpUtils.Service';
+import { IndexedDbService } from './utils/IndexedDb.Service';
 
 registerLocaleData(zh);
 const appRoutes :Routes=[
